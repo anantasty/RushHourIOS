@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A7E28B9190A3EE7003E764E /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC665AE18E1AC5D00CF76DE /* libzbar.a */; };
+		8A7E28BB190A3F57003E764E /* libzbar1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7E28BA190A3F57003E764E /* libzbar1.a */; };
 		8AC6650718E17A9B00CF76DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC6650618E17A9B00CF76DE /* Foundation.framework */; };
 		8AC6650918E17A9B00CF76DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC6650818E17A9B00CF76DE /* CoreGraphics.framework */; };
 		8AC6650B18E17A9B00CF76DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC6650A18E17A9B00CF76DE /* UIKit.framework */; };
@@ -36,10 +38,8 @@
 		8AC6657618E1A24700CF76DE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC6657218E1A24700CF76DE /* libz.dylib */; };
 		8AC6657818E1A26200CF76DE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC6657718E1A26200CF76DE /* CoreMedia.framework */; };
 		8AC6659118E1A6D100CF76DE /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC6659018E1A6D100CF76DE /* CoreVideo.framework */; };
-		8AC6659318E1A6F300CF76DE /* libzbar1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC6659218E1A6F300CF76DE /* libzbar1.a */; };
 		8AC665AC18E1A6FE00CF76DE /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC6659518E1A6FE00CF76DE /* NSData+Base64.m */; };
 		8AC665AD18E1A6FE00CF76DE /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC6659718E1A6FE00CF76DE /* NSString+Base64.m */; };
-		8AC665AF18E1AC5D00CF76DE /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC665AE18E1AC5D00CF76DE /* libzbar.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A7E28BA190A3F57003E764E /* libzbar1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar1.a; sourceTree = "<group>"; };
 		8AC6650318E17A9B00CF76DE /* QRCODE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCODE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC6650618E17A9B00CF76DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8AC6650818E17A9B00CF76DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -88,7 +89,6 @@
 		8AC6657218E1A24700CF76DE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		8AC6657718E1A26200CF76DE /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		8AC6659018E1A6D100CF76DE /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		8AC6659218E1A6F300CF76DE /* libzbar1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar1.a; sourceTree = "<group>"; };
 		8AC6659418E1A6FE00CF76DE /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		8AC6659518E1A6FE00CF76DE /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		8AC6659618E1A6FE00CF76DE /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
@@ -121,9 +121,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A7E28BB190A3F57003E764E /* libzbar1.a in Frameworks */,
+				8A7E28B9190A3EE7003E764E /* libzbar.a in Frameworks */,
 				8AC6659118E1A6D100CF76DE /* CoreVideo.framework in Frameworks */,
 				8AC6657818E1A26200CF76DE /* CoreMedia.framework in Frameworks */,
-				8AC665AF18E1AC5D00CF76DE /* libzbar.a in Frameworks */,
 				8AC6657318E1A24700CF76DE /* libz.1.1.3.dylib in Frameworks */,
 				8AC6657418E1A24700CF76DE /* libz.1.2.5.dylib in Frameworks */,
 				8AC6657518E1A24700CF76DE /* libz.1.dylib in Frameworks */,
@@ -138,7 +139,6 @@
 				8AC6650918E17A9B00CF76DE /* CoreGraphics.framework in Frameworks */,
 				8AC6650B18E17A9B00CF76DE /* UIKit.framework in Frameworks */,
 				8AC6650718E17A9B00CF76DE /* Foundation.framework in Frameworks */,
-				8AC6659318E1A6F300CF76DE /* libzbar1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +273,7 @@
 				8AC665AA18E1A6FE00CF76DE /* ZBarSDK.h */,
 				8AC665AB18E1A6FE00CF76DE /* ZBarSymbol.h */,
 				8AC665AE18E1AC5D00CF76DE /* libzbar.a */,
-				8AC6659218E1A6F300CF76DE /* libzbar1.a */,
+				8A7E28BA190A3F57003E764E /* libzbar1.a */,
 			);
 			name = Zip;
 			sourceTree = "<group>";
@@ -497,17 +497,21 @@
 		8AC6653018E17A9B00CF76DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QRCODE/QRCODE-Prefix.pch";
 				INFOPLIST_FILE = "QRCODE/QRCODE-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/mac3/Desktop/QRCODE,
+					"$(PROJECT_DIR)",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -515,17 +519,21 @@
 		8AC6653118E17A9B00CF76DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QRCODE/QRCODE-Prefix.pch";
 				INFOPLIST_FILE = "QRCODE/QRCODE-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/mac3/Desktop/QRCODE,
+					"$(PROJECT_DIR)",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
